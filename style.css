@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3ebf2;
+    margin: 0;
+    padding: 20px;
+}
+
+.calculator {
+  background-color: #fdd1dc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+    border: 3px solid #ff66a3;
+    text-align: center;
+}
+
+.calculator h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calculator label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin: 3px 0 3px;
+    color: #333;
+}
+
+.calculator input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ff66a3;
+    border-radius: 15px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.calculator input:focus {
+    border: 3px solid #ff66a3;
+    box-shadow: 3px 0px 10px rgba(255, 102, 163, 0.5);
+}
+
+.calculator input[readonly] {
+    width: 150px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid #ff66a3;
+    color: black;
+    border-radius: 15px ;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.calculator input[readonly]:focus {
+    border: 3px solid #ff66a3;
+    box-shadow: 3px 0px 10px rgba(255, 102, 163, 0.5);
+}
+
+.calculator button {
+    width: 50px;
+    height: 35px;
+    margin: 7px;
+    font-size: 20px;
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Style tombol back */
+.back-button {
+  position: absolute; /* biar bisa ditempelkan di pojok */
+  top: 20px; /* jarak dari atas */
+  left: 20px; /* jarak dari kiri */
+}
+
+.back-button button {
+  padding: 8px 16px;
+  background-color: #ffc5d3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button button:hover {
+  background-color: #f33f84;
+}
